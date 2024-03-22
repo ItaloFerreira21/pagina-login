@@ -2,22 +2,27 @@
   <section class="form-section">
     <img src="/assets/image/svg/logo.svg" alt="">
     <h2> {{title}} </h2>
-    <ng-content #name></ng-content>
+    <ng-content #name></ng-content> <!--talvez aqui seja email ao inves de name-->
 
     <div class="btn-espaco">
-      <button class="btn-primario" > {{textoBtnPrimario}} </button>
+      <button class="btn-primario"
+      (click)="submit()"
+      [disabled]="disableBtnPrimario"
+       > {{textoBtnPrimario}} </button>
       <div class="divisor">
         <div></div>
         <span>Ou</span>
         <div></div>
       </div>
-      <button class="btn-secundario" > {{textoBtnSecundario}} </button>
+      <button class="btn-secundario"
+      (click)="navigate()"
+      > {{textoBtnSecundario}} </button>
     </div>
     </section>
 
 
   <section class="main-section">
-    <h1>you Should, movie</h1>
+    <h1>Você deveria se mover</h1>
     <img src="/assets/image/svg/img-principal.svg" alt="">
 
   </section>

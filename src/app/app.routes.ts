@@ -7,3 +7,5 @@ export const routes: Routes = [
     component: LoginComponent
   }
 ];
+
+/* O arquivo app.route redireciona para o LOginComponente*/

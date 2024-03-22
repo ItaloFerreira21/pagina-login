@@ -77,6 +77,10 @@ main {
                 font-size: 15px;
                 transition: all 0.5s ease;
 
+                &:disabled {
+                  opacity: 0.9;
+                }
+
                 &.btn-primario {
                   background-color: $cor-primaria;
                   color: hsl(0, 0%, 100%);
