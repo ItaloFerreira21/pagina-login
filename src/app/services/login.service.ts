@@ -11,8 +11,8 @@ import { tap } from 'rxjs';
 export class LoginService {
 
   constructor(private httpClient: HttpClient) { }
-  login(email: string, senha: string) {
-    return this.httpClient.post<LoginResponse>('/login', { email, senha }).pipe(
+  login(email: string, password: string) {
+    return this.httpClient.post<LoginResponse>('/login', { email, password }).pipe(
       tap((value) =>{
       sessionStorage.setItem("auth-token", value.token)
       sessionStorage.setItem("email", value.email)

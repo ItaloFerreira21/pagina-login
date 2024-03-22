@@ -1,0 +1,19 @@
+<app-login-layout
+title="Faça login e comece hoje"
+textoBtnPrimario="Conecte-se agora"
+textoBtnSecundario="Inscreva-se agora"
+(submit)="submit()"
+(navigate)="navigate()"
+[disableBtnPrimario]="!signupForm.valid"
+ >
+
+  <form [formGroup]="signupForm" >
+    <app-input-primario
+    inputName="name"
+    type="text"
+    placeholder="jon Doe" >
+    </app-input-primario>
+
+  </form>
+
+</app-login-layout>

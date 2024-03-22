@@ -1,5 +1,5 @@
 import { Component, forwardRef, Input } from '@angular/core';
-import { ControlValueAccessor, ReactiveFormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { ControlValueAccessor, FormGroup, ReactiveFormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 type InputTypes = "text" | "email" | "password"
 @Component({
   selector: 'app-input-primario',
@@ -40,8 +40,5 @@ export class InputPrimarioComponent implements ControlValueAccessor {
   registerOnTouched(fn: any): void {
     this.onTouched = fn
   }
-  setDisabledState(isDisabled: boolean): void {
-
-  }
-
+  setDisabledState(_isDisabled: boolean): void {}
 }

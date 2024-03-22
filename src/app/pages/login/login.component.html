@@ -4,13 +4,10 @@ textoBtnPrimario="Conecte-se agora"
 textoBtnSecundario="Inscreva-se agora"
 (submit)="submit()"
 (navigate)="navigate()"
-[disableBtnPrimario]="!loginForm.valid"
- >
+[disableBtnPrimario]="!loginForm.valid">
 
   <form [formGroup]="loginForm" >
-    <app-input-primario  inputName="email" type="email" placeholder="Seuemail@gmail.com" >
-
-    </app-input-primario>
+    <app-input-primario  inputName="email" type="email" placeholder="Seuemail@gmail.com" ></app-input-primario>
   </form>
 
 </app-login-layout>
